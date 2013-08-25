@@ -13,7 +13,7 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/css/*' do
+compile '/stylesheets/*' do
   filter :sass, syntax: :scss
 end
 
@@ -26,7 +26,7 @@ compile '*' do
   end
 end
 
-route '/css/*' do
+route '/stylesheets/*' do
   item.identifier.chop + '.css'
 end
 
