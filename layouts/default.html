@@ -47,14 +47,15 @@
 	<div class="container">
     <div id="header">
       <div class="sixteen columns">
-        <h1 class="remove-bottom" style="margin-top: 40px"><%= @item[:title] %></h1>
+        <div class="row">
+          <h1 class="remove-bottom" style="margin-top: 40px"><%= [ '<a href="/">Cape Town Ruby Brigade</a>', @item[:title] ].compact.join(' > ') %></h1>
+        </div>
         <hr />
       </div>
     </div>
-    <div class="body">
+    <div id="body">
       <%= yield %>
     </div>
-
 
 	</div><!-- container -->
 
