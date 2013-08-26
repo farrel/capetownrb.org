@@ -62,3 +62,4 @@ deploy:
   default:
     kind: rsync
     dst: "capetownrb.org:/var/local/www/capetownrb.org"
+    options: [ '-aP', '--delete-after' ]
