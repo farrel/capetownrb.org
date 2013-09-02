@@ -36,9 +36,9 @@
 
 </head>
 <body>
-	<!-- Primary Page Layout
-	================================================== -->
-	<div class="container">
+  <!-- Primary Page Layout
+  ================================================== -->
+  <div class="container">
     <div id="header">
       <div class="sixteen columns">
         <div class="row">
@@ -50,8 +50,16 @@
     <div id="body">
       <%= yield %>
     </div>
-	</div><!-- container -->
-<!-- End Document
-================================================== -->
+    <div id="footer">
+      <div class="sixteen columns">
+        <div class="row">
+          <hr />
+          <p>Last Update: <%= Time.now %> | <a href="http://github.com/farrel/capetownrb.org">Fork This Website!</a></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- container -->
+  <!-- End Document
+  ================================================== -->
 </body>
 </html>
